@@ -1,0 +1,30 @@
+        proc print_rmsd_through_time {{mol top}} {
+
+                set reference [atomselect $mol "protein" frame 0]
+                set compare [atomselect $mol "protein"]
+
+                set num_steps [molinfo $mol get numframes]
+                for {set frame 0} {$frame < $num_steps} {incr frame} {
+                        $compare frame $frame
+
+                        set trans_mat [measure fit $compare $reference]
+                        $compare move $trans_mat
+                        set rmsd [measure rmsd $compare $reference]
+                        puts "RMSD of $frame is $rmsd"
+                }
+        }
+
+RMSD of 0 is 0.0
+RMSD of 1 is 2.917583703994751
+RMSD of 2 is 2.8376505374908447
+RMSD of 3 is 2.780628204345703
+RMSD of 4 is 2.2999823093414307
+RMSD of 5 is 1.9540091753005981
+RMSD of 6 is 1.8728840351104736
+RMSD of 7 is 2.6847503185272217
+RMSD of 8 is 2.978052854537964
+RMSD of 9 is 2.210493564605713
+RMSD of 10 is 3.023233413696289
+RMSD of 11 is 3.197148323059082
+RMSD of 12 is 2.373631000518799
+RMSD of 13 is 2.6915907859802246
