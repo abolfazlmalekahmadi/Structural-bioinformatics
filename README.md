@@ -11,7 +11,7 @@ this exam include :
   <li>How long is the selected protein naturally? Has the full length of the protein been X-ray crystallographed? Are they located at the junction       with the chemical molecule, missing residue or missing atom?</li>
   <li>Are there any special pattern(s) reported as signature of your protein domain(s)?</li>
   <li>[Design a procedure that specifies the amino acid sequence and the percentage of hydrophobic, positively charged, negatively charged, and         neutral polar amino acids](https://github.com/abolfazlmalekahmadi/Structural-bioinformatics/blob/main/vmd/5.tcl)</li>
-  <li>[Design a procedure to find the amino acids involved in disulfide bonds. Please compare the result with the information available in the PDB database](https://github.com/abolfazlmalekahmadi/Structural-bioinformatics/blob/main/vmd/6.tcl)</li>
+  <li>[Design a procedure to find the amino acids involved in disulfide bonds. Please compare the result with the information available in the PDB database] (https://github.com/abolfazlmalekahmadi/Structural-bioinformatics/blob/main/vmd/6.tcl)</li>
 
 </ul>
 
